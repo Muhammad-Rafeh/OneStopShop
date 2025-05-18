@@ -85,7 +85,7 @@ export default async function Home() {
           </TabsContent>
           <TabsContent value="for-buyers">
             <HomePageLayout
-              heading={<Heading size="h1">Online shopping made easy.</Heading>}
+              heading={<Heading size="h1">Online Construction made easy.</Heading>}
               subheading={
                 <Heading size="h2">
                   Shop hundreds of products from sellers worldwide.
