@@ -91,6 +91,7 @@ export default async function StorefrontProductDetails(props: {
             productName={product.name}
             availableInventory={product.inventory}
             productId={product.id}
+            price={product.price}
           />
           <FeatureIcons className="mt-8" />
         </div>

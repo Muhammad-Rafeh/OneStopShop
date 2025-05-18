@@ -17,6 +17,7 @@ export const ProductForm = (props: {
   productId: number;
   productName: string | null;
   disableQuantitySelector?: boolean;
+  price: number | string | null;
   buttonSize?: "default" | "sm";
 }) => {
   const [quantity, setQuantity] = useState<string | number>(1);
@@ -33,7 +34,7 @@ export const ProductForm = (props: {
         Number(props.availableInventory) > 0 &&
         !props.disableQuantitySelector && (
           <div className="flex flex-col gap-1 items-start">
-            <Label htmlFor="quantity">Quantity</Label>
+            <Label htmlFor="quantity">Quantity square feet of other unit</Label>
             <Input
               className="w-24"
               id="quantity"
@@ -44,6 +45,14 @@ export const ProductForm = (props: {
             />
           </div>
         )}
+        <br />
+
+      {
+       <div className="flex flex-col gap-1 items-start">
+            <Label htmlFor="quantity">total calculated</Label>
+            <div className="w-24">{Number(quantity) * Number(props.price)}</div>
+          </div>
+      }
       {props.availableInventory && Number(props.availableInventory) > 0 ? (
         <Button
           size={props.buttonSize ?? "default"}
