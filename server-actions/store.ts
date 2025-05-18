@@ -2,8 +2,8 @@
 
 import { db } from "@/db/db";
 import { stores } from "@/db/schema";
-import { currentUser } from "@clerk/nextjs";
-import { users } from "@clerk/nextjs/dist/api";
+import { currentUser } from '@clerk/nextjs/server'
+import { users } from "@clerk/nextjs/api"
 import { eq, or } from "drizzle-orm";
 import { z } from "zod";
 import { createSlug } from "@/lib/createSlug";
