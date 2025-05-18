@@ -4,7 +4,7 @@ import React from "react";
 import { Toaster } from "@/components/ui/Toaster";
 
 export const metadata = {
-  title: "OneStopShop - Online marketplace",
+  title: "Construction Services - Online marketplace",
   description: "Online marketplace",
 };
 
