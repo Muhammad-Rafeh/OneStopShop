@@ -37,7 +37,7 @@ export const SlideShow = () => {
             className="object-cover"
           />
         </div>
-        <div className="absolute w-full h-full bg-translucentDark top-0 bottom-0 left-0 right-0">
+        {/* <div className="absolute w-full h-full bg-translucentDark top-0 bottom-0 left-0 right-0">
           <div className="absolute md:top-0 bottom-0 right-0 left-0 m-auto w-fit h-fit text-center">
             <div className="bg-white md:border border-border md:rounded-md py-8 px-16 flex flex-col gap-3">
               <p className="uppercase font-medium tracking-wide">Summer Sale</p>
@@ -52,7 +52,7 @@ export const SlideShow = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="flex items-center justify-center gap-2 mt-2">
         {images.map((_, i) => (
