@@ -54,6 +54,7 @@ export const ProductCard = (props: {
             productName={props.storeAndProduct.product.name}
             buttonSize="sm"
             price={props.storeAndProduct.product.price}
+            description={props.storeAndProduct.product.description}
           />
         </div>
       )}
