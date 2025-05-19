@@ -9,10 +9,7 @@ export const FeatureIcons = (props: { className?: string }) => {
         props.className
       )}
     >
-      <div className="flex items-center justify-center flex-col gap-2 sm:mx-4">
-        <Truck />
-        <p className="text-sm">Fast Dispatch</p>
-      </div>
+     
       <div className="flex items-center justify-center flex-col gap-2 sm:mx-4">
         <RotateCcw />
         <p className="text-sm">30 Day Returns</p>

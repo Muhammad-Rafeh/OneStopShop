@@ -88,7 +88,12 @@ export default async function Home() {
               heading={<Heading size="h1">Online Construction made easy.</Heading>}
               subheading={
                 <Heading size="h2">
-                  Shop hundreds of products from sellers worldwide.
+                  🏗 Welcome to PEC – Pakistan Engineering Consultancy
+Connecting Clients with Verified Engineers & Skilled Construction Experts
+
+At PEC, we make construction simple, secure, and professional. Whether you need expert supervision, a qualified engineer, or skilled workers like electricians, painters, or tilers — we bring them all to one platform.
+
+Our mission is to streamline the construction process by ensuring every project is managed by trusted professionals with verified work history and strong client feedback
                 </Heading>
               }
             >
@@ -104,10 +109,10 @@ export default async function Home() {
               </div>
               <div className="mt-12 grid place-content-center">
                 <Link href={routes.products}>
-                  <Button variant="default">View All Products</Button>
+                  <Button variant="default">View All Contractors</Button>
                 </Link>
               </div>
-              <div className="bg-blue-900 text-white w-full p-12 rounded-md mt-12 flex items-center flex-col gap-2 justify-center text-center">
+              <div className="bg-green-700 text-white w-full p-12 rounded-md mt-12 flex items-center flex-col gap-2 justify-center text-center">
                 <p className="uppercase tracking-wide text-sm font-medium">
                   Featured seller
                 </p>
@@ -124,16 +129,8 @@ export default async function Home() {
                 </Link>
               </div>
               <div className="md:grid md:grid-cols-3 gap-4 flex flex-col mt-12">
-                <FeatureBanner
-                  heading="Free Shipping"
-                  subheading="Free shipping on all orders over $50"
-                  icon={<Truck size={32} />}
-                />
-                <FeatureBanner
-                  heading="24/7 Customer Support"
-                  subheading="Have a question? Get in touch."
-                  icon={<Phone size={32} />}
-                />
+               
+              
                 <FeatureBanner
                   heading="Best prices"
                   subheading="We offer the best prices on the market."

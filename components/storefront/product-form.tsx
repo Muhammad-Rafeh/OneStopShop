@@ -19,9 +19,25 @@ export const ProductForm = (props: {
   disableQuantitySelector?: boolean;
   price: number | string | null;
   buttonSize?: "default" | "sm";
+  description: string | null;
 }) => {
   const [quantity, setQuantity] = useState<string | number>(1);
   let [isPending, startTransition] = useTransition();
+
+  const extractNumber = (description: string | null) => {
+    const str = description;
+
+    if (!str) return;
+    const match = str.match(/\+(\d+)/);
+
+    if (match) {
+      const number = match[1];
+      console.log(number); // Output: 92234235235
+      return number;
+    } else {
+      console.log("No number found");
+    }
+  };
 
   return (
     <div
@@ -45,38 +61,31 @@ export const ProductForm = (props: {
             />
           </div>
         )}
-        <br />
+      <br />
 
       {
-       <div className="flex flex-col gap-1 items-start">
-            <Label htmlFor="quantity">total calculated</Label>
-            <div className="w-24">{Number(quantity) * Number(props.price)}</div>
-          </div>
+        <div className="flex flex-col gap-1 items-start">
+          <Label htmlFor="quantity">total calculated</Label>
+          <div className="w-24">{Number(quantity) * Number(props.price)}</div>
+        </div>
       }
       {props.availableInventory && Number(props.availableInventory) > 0 ? (
         <Button
           size={props.buttonSize ?? "default"}
           className={cn(props.disableQuantitySelector ? "w-full" : "w-36")}
           onClick={() => {
-            startTransition(
-              () =>
-                void props.addToCartAction({
-                  id: props.productId,
-                  qty: Number(quantity),
-                })
-            );
-            toast({
-              title: "Added to cart",
-              description: `${quantity}x ${props.productName} has been added to your cart.`,
-              action: (
-                <Link href={routes.cart}>
-                  <ToastAction altText="View cart">View</ToastAction>
-                </Link>
-              ),
-            });
+            const phoneNumber = extractNumber(props.description);
+            if (phoneNumber) {
+              window.location.href = `tel:${phoneNumber}`;
+            } else {
+              toast({
+                title: "Phone number not found",
+                description: "We couldn’t find a phone number to call.",
+              });
+            }
           }}
         >
-          Add to Cart
+          Get Quote
         </Button>
       ) : (
         <Button

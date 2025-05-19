@@ -24,6 +24,7 @@ export const SlideShow = () => {
   }, [currentImageIndex, hasInteracted]);
 
   return (
+    <div className="max-w-[1000px] m-auto">
     <div className="mb-4">
       <div className="relative">
         <div
@@ -69,6 +70,7 @@ export const SlideShow = () => {
           </button>
         ))}
       </div>
+    </div>
     </div>
   );
 };

@@ -21,7 +21,7 @@ export const NavBar = ({
     <>
       <AnnouncementBar
         columns={2}
-        description="Free shipping on all orders over $50"
+        description=""
       >
         <div className="items-center justify-end gap-6 hidden sm:flex">
           <Link
@@ -59,17 +59,9 @@ export const NavBar = ({
               <ProductSearch />
             </li>
             <li className="hidden lg:block">
-              <Link href="/">
-                <IconWithText
-                  icon={<Truck size="36" strokeWidth={2} />}
-                  headingText="Fast Dispatch"
-                  description="Get your order in 2-3 days"
-                />
-              </Link>
+             
             </li>
-            <li>
-              <ShoppingCartHeader />
-            </li>
+            
           </ul>
         </ContentWrapper>
         <Line className="hidden md:block" />
@@ -82,8 +74,8 @@ export const NavBar = ({
       {showSecondAnnouncementBar && (
         <AnnouncementBar
           columns={1}
-          description="New summer sale - limited time only!"
-          backgroundColor="bg-blue-900"
+          description="Get your dream home"
+          backgroundColor="bg-green-700"
           textColor="text-secondary"
         />
       )}

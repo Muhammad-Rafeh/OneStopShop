@@ -92,6 +92,7 @@ export default async function StorefrontProductDetails(props: {
             availableInventory={product.inventory}
             productId={product.id}
             price={product.price}
+            description={product.description}
           />
           <FeatureIcons className="mt-8" />
         </div>
@@ -99,7 +100,7 @@ export default async function StorefrontProductDetails(props: {
       <Tabs defaultValue="product">
         <div className="overflow-auto">
           <TabsList>
-            <TabsTrigger value="product">Product Description</TabsTrigger>
+            <TabsTrigger value="product">Offer Description</TabsTrigger>
             <TabsTrigger value="seller">About the Seller</TabsTrigger>
           </TabsList>
         </div>
