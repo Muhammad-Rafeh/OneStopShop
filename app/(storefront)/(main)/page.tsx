@@ -116,10 +116,9 @@ Our mission is to streamline the construction process by ensuring every project 
                 <p className="uppercase tracking-wide text-sm font-medium">
                   Featured seller
                 </p>
-                <p className="text-3xl font-bold">Tim&apos;s Terrific Toys</p>
+                <p className="text-3xl font-bold">Lets Concrete Together</p>
                 <p>
-                  Top seller of the month! Tim&apos;s Toys has been selling toys
-                  for 10 years and is a top rated seller on the platform.
+                  "Top Professional of the Month! Our verified engineer Osama brings years of hands-on experience and has consistently delivered top-rated construction supervision and consultancy services through our platform."
                 </p>
                 <Link
                   href={routes.products + "?seller=tims-toys"}

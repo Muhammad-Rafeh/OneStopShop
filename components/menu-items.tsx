@@ -74,17 +74,24 @@ export function MenuItems() {
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href={routes.products} title="New Arrivals">
-                Shop our new arrivals and exclusive collections.
+              <ListItem href={routes.products} title="Our Professionals">
+                Visit
               </ListItem>
-              <ListItem href={routes.products} title="Sport">
-                Discover our new sports range.
+              <ListItem href={routes.products} title="Services">
+                Visit
               </ListItem>
-              <ListItem href={routes.products} title="Summer Sale">
-                Grab a bargain with our summer sale.
+              <ListItem href={routes.products} title="Browse Experts">
+                Visit
               </ListItem>
             </ul>
           </NavigationMenuContent>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="/projectGallery" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              Project Gallery
+            </NavigationMenuLink>
+          </Link>
         </NavigationMenuItem>
         {/* <NavigationMenuItem>
           <NavigationMenuTrigger>Featured Sellers</NavigationMenuTrigger>

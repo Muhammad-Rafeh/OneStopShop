@@ -1,12 +1,12 @@
 export const currencyFormatter = (value: number) => {
-  const formattedPrice = new Intl.NumberFormat("en-US", {
+  const formattedPrice = new Intl.NumberFormat("en-PK", {
     style: "currency",
-    currency: "USD",
+    currency: "PKR",
   }).format(value);
 
-  const [dollars, cents] = formattedPrice.split(".");
-  if (cents === "00") {
-    return dollars;
+  const [rupees, paisa] = formattedPrice.split(".");
+  if (paisa === "00") {
+    return rupees;
   }
   return formattedPrice;
 };
