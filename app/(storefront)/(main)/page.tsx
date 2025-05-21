@@ -118,7 +118,7 @@ Our mission is to streamline the construction process by ensuring every project 
                 </p>
                 <p className="text-3xl font-bold">Lets Concrete Together</p>
                 <p>
-                  "Top Professional of the Month! Our verified engineer Osama brings years of hands-on experience and has consistently delivered top-rated construction supervision and consultancy services through our platform."
+                  Top Professional of the Month! Our verified engineer Osama brings years of hands-on experience and has consistently delivered top-rated construction supervision and consultancy services through our platform
                 </p>
                 <Link
                   href={routes.products + "?seller=tims-toys"}
